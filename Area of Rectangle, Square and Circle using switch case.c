@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#define pi 3.14
 void area_of_rectangle(void);
 void area_of_square(void);
 void area_of_circle(void);
@@ -32,27 +33,27 @@ void main()
 void area_of_rectangle()
 {
 	float l , b , a;
-	printf("Enter length of the rectangle: ");
+	printf("Enter length of the Rectangle: ");
 	scanf("%f",&l);
-	printf("Enter breadth of the rectangle: ");
+	printf("Enter breadth of the Rectangle: ");
 	scanf("%f",&b);
 	a = l * b;
-	printf("Area of the rectangle is : %f\n\n",a);
+	printf("Area of the Rectangle is : %f\n\n",a);
 	
 }
 void area_of_square()
 {
 	float l , a;
-	printf("Enter the length of one side of square: ");
+	printf("Enter the length of one side of Square: ");
 	scanf("%f",&l);
 	a = l * l;
-	printf("Area of the square is : %f\n\n",a);
+	printf("Area of the Square is : %f\n\n",a);
 }
 void area_of_circle()
 {
 	float r , a;
-	printf("Enter the radius of the circle: ");
+	printf("Enter the radius of the Circle: ");
 	scanf("%f",&r);
-	a = 3.14 * r * r;
-	printf("Area of the circle is : %f\n\n",a);
+	a = pi * r * r;
+	printf("Area of the Circle is : %f\n\n",a);
 }
